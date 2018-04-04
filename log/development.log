@@ -164,3 +164,305 @@ Migrating to AddColumnTripToDriver (20180403192555)
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(2946439564592859195)[0m
   [1m[35m (6.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (9.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 1], ["name", "Bernardo Prosacco"], ["vin", "WBWSS52P9NEYLVDE9"], ["created_at", "2018-04-03 23:39:24.337793"], ["updated_at", "2018-04-03 23:39:24.337793"]]
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 2], ["name", "Emory Rosenbaum"], ["vin", "1B9WEX2R92R12900E"], ["created_at", "2018-04-03 23:39:24.353980"], ["updated_at", "2018-04-03 23:39:24.353980"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 3], ["name", "Daryl Nitzsche"], ["vin", "SAL6P2M2XNHC5Y656"], ["created_at", "2018-04-03 23:39:24.357995"], ["updated_at", "2018-04-03 23:39:24.357995"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 4], ["name", "Jeromy O'Keefe DVM"], ["vin", "L1CKRVH55W8S6S9T1"], ["created_at", "2018-04-03 23:39:24.362460"], ["updated_at", "2018-04-03 23:39:24.362460"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 5], ["name", "Verla Marquardt"], ["vin", "TAMLE35L3MAYRV1JD"], ["created_at", "2018-04-03 23:39:24.366611"], ["updated_at", "2018-04-03 23:39:24.366611"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 6], ["name", "Mr. Hyman Wolf"], ["vin", "L1CXMYNZ3MMGTTYWU"], ["created_at", "2018-04-03 23:39:24.370894"], ["updated_at", "2018-04-03 23:39:24.370894"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 7], ["name", "Lizeth Dickens"], ["vin", "W09XNTZR9KTFK10WW"], ["created_at", "2018-04-03 23:39:24.375122"], ["updated_at", "2018-04-03 23:39:24.375122"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 8], ["name", "Shania Olson"], ["vin", "KPH7TNNL14MDUFNF8"], ["created_at", "2018-04-03 23:39:24.379295"], ["updated_at", "2018-04-03 23:39:24.379295"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 9], ["name", "Simone Hackett"], ["vin", "4RA34A5K3YPN8H5P4"], ["created_at", "2018-04-03 23:39:24.383295"], ["updated_at", "2018-04-03 23:39:24.383295"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 10], ["name", "Dr. Kenton Berge"], ["vin", "SXMMLZX8XGDN7L7TL"], ["created_at", "2018-04-03 23:39:24.389144"], ["updated_at", "2018-04-03 23:39:24.389144"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 11], ["name", "Billy Walsh"], ["vin", "SARJG2FD3A7T21H18"], ["created_at", "2018-04-03 23:39:24.395130"], ["updated_at", "2018-04-03 23:39:24.395130"]]
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 12], ["name", "Ms. Llewellyn Marquardt"], ["vin", "TAMX2B609RPZY1XHT"], ["created_at", "2018-04-03 23:39:24.402457"], ["updated_at", "2018-04-03 23:39:24.402457"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 13], ["name", "Mr. Delbert Gleason"], ["vin", "XF9HBFH148FLD41K8"], ["created_at", "2018-04-03 23:39:24.406701"], ["updated_at", "2018-04-03 23:39:24.406701"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 14], ["name", "Antwan Prosacco"], ["vin", "KPLUTG0L6NW1A0ZRF"], ["created_at", "2018-04-03 23:39:24.415992"], ["updated_at", "2018-04-03 23:39:24.415992"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 15], ["name", "Gayle Herzog"], ["vin", "L1CDHZJ0567RJKCJ6"], ["created_at", "2018-04-03 23:39:24.421117"], ["updated_at", "2018-04-03 23:39:24.421117"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 16], ["name", "Shakira Stamm"], ["vin", "SALUVSAL3WA67SBPZ"], ["created_at", "2018-04-03 23:39:24.425830"], ["updated_at", "2018-04-03 23:39:24.425830"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 17], ["name", "Federico Bins V"], ["vin", "W092FDPH6FNNK102M"], ["created_at", "2018-04-03 23:39:24.430058"], ["updated_at", "2018-04-03 23:39:24.430058"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 18], ["name", "Ms. Kamille Wyman"], ["vin", "SUA4ALKJ0YRFMASB2"], ["created_at", "2018-04-03 23:39:24.438684"], ["updated_at", "2018-04-03 23:39:24.438684"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 19], ["name", "Bill Denesik"], ["vin", "L1C4AHZE55DGBKAK6"], ["created_at", "2018-04-03 23:39:24.444361"], ["updated_at", "2018-04-03 23:39:24.444361"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 20], ["name", "Abby Hettinger"], ["vin", "1C9511EE4YR35640C"], ["created_at", "2018-04-03 23:39:24.448664"], ["updated_at", "2018-04-03 23:39:24.448664"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 21], ["name", "Adell Jacobs"], ["vin", "RF5J464C70D9C3KTB"], ["created_at", "2018-04-03 23:39:24.452673"], ["updated_at", "2018-04-03 23:39:24.452673"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 22], ["name", "Devan O'Kon"], ["vin", "J811TNPS4FYZF4VGU"], ["created_at", "2018-04-03 23:39:24.456829"], ["updated_at", "2018-04-03 23:39:24.456829"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 23], ["name", "Bo Stroman DVM"], ["vin", "1F8C93JX5D62SYRYY"], ["created_at", "2018-04-03 23:39:24.463823"], ["updated_at", "2018-04-03 23:39:24.463823"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 24], ["name", "Camryn Hegmann"], ["vin", "RF3M0UR85BEJHH27W"], ["created_at", "2018-04-03 23:39:24.469818"], ["updated_at", "2018-04-03 23:39:24.469818"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 25], ["name", "Briana Braun"], ["vin", "SU9PYDRK6214WL15M"], ["created_at", "2018-04-03 23:39:24.474988"], ["updated_at", "2018-04-03 23:39:24.474988"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 26], ["name", "Palma Conroy PhD"], ["vin", "KPLD0JH17AMELZAHH"], ["created_at", "2018-04-03 23:39:24.479657"], ["updated_at", "2018-04-03 23:39:24.479657"]]
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 27], ["name", "Nicholas Larkin"], ["vin", "1F90EY0F4DTJ041CS"], ["created_at", "2018-04-03 23:39:24.483849"], ["updated_at", "2018-04-03 23:39:24.483849"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 28], ["name", "Ms. Carmelo Swaniawski"], ["vin", "9BENHE4130KV2P38S"], ["created_at", "2018-04-03 23:39:24.488015"], ["updated_at", "2018-04-03 23:39:24.488015"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 29], ["name", "Miss Gustave Erdman"], ["vin", "WD3HAS8D0ZT3T9XND"], ["created_at", "2018-04-03 23:39:24.493320"], ["updated_at", "2018-04-03 23:39:24.493320"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 30], ["name", "Casper Flatley"], ["vin", "L1CN7SPD96M6SNFYU"], ["created_at", "2018-04-03 23:39:24.500426"], ["updated_at", "2018-04-03 23:39:24.500426"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 31], ["name", "Sheila VonRueden"], ["vin", "KPH9RLSZ9YKNVMGH2"], ["created_at", "2018-04-03 23:39:24.504784"], ["updated_at", "2018-04-03 23:39:24.504784"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 32], ["name", "Belle Rohan"], ["vin", "RF4NN09F9JH8738HF"], ["created_at", "2018-04-03 23:39:24.509292"], ["updated_at", "2018-04-03 23:39:24.509292"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 33], ["name", "Dock Lemke"], ["vin", "VF5JF6DT01CWDCAHJ"], ["created_at", "2018-04-03 23:39:24.515505"], ["updated_at", "2018-04-03 23:39:24.515505"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 34], ["name", "Velma O'Connell"], ["vin", "VF63VETH08Y8CUAKW"], ["created_at", "2018-04-03 23:39:24.520166"], ["updated_at", "2018-04-03 23:39:24.520166"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 35], ["name", "May Rolfson"], ["vin", "W09WNXAX60PBK10PH"], ["created_at", "2018-04-03 23:39:24.524718"], ["updated_at", "2018-04-03 23:39:24.524718"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 36], ["name", "Mr. Marcelina Jenkins"], ["vin", "WD3VLLK2X04HF50PL"], ["created_at", "2018-04-03 23:39:24.533208"], ["updated_at", "2018-04-03 23:39:24.533208"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 37], ["name", "Arnulfo Anderson"], ["vin", "WBW8W7DC0FJLMYCCR"], ["created_at", "2018-04-03 23:39:24.537942"], ["updated_at", "2018-04-03 23:39:24.537942"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 38], ["name", "Albina Dach"], ["vin", "1C91DT907AMU5649F"], ["created_at", "2018-04-03 23:39:24.542819"], ["updated_at", "2018-04-03 23:39:24.542819"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 39], ["name", "Mrs. Skylar Strosin"], ["vin", "WD3R6AJ15CPJZLR0T"], ["created_at", "2018-04-03 23:39:24.548011"], ["updated_at", "2018-04-03 23:39:24.548011"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 40], ["name", "Nicola Blanda IV"], ["vin", "SARFDDM35AL1BESM5"], ["created_at", "2018-04-03 23:39:24.551406"], ["updated_at", "2018-04-03 23:39:24.551406"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 41], ["name", "Mario Olson"], ["vin", "RFWG8S4U59C22CW1F"], ["created_at", "2018-04-03 23:39:24.555801"], ["updated_at", "2018-04-03 23:39:24.555801"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 42], ["name", "Granville Mertz"], ["vin", "1B9TPKC24YPL290Y4"], ["created_at", "2018-04-03 23:39:24.561160"], ["updated_at", "2018-04-03 23:39:24.561160"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 43], ["name", "Mr. Kristy Funk"], ["vin", "KPLZHRBB1E3RSF9WA"], ["created_at", "2018-04-03 23:39:24.566670"], ["updated_at", "2018-04-03 23:39:24.566670"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 44], ["name", "Rusty Turner"], ["vin", "WBT5XKHH6BKH1V82M"], ["created_at", "2018-04-03 23:39:24.571904"], ["updated_at", "2018-04-03 23:39:24.571904"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 45], ["name", "Vanessa Hilpert"], ["vin", "LLD9S75M72GZX3B1H"], ["created_at", "2018-04-03 23:39:24.578112"], ["updated_at", "2018-04-03 23:39:24.578112"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 46], ["name", "Junius Daniel"], ["vin", "8C9UWXN29AYHME1WB"], ["created_at", "2018-04-03 23:39:24.586086"], ["updated_at", "2018-04-03 23:39:24.586086"]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 47], ["name", "Jerald Robel"], ["vin", "J811JTDM3UB2STDX6"], ["created_at", "2018-04-03 23:39:24.592532"], ["updated_at", "2018-04-03 23:39:24.592532"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 48], ["name", "Antonietta O'Kon"], ["vin", "1G8ZBYM74NYHJK217"], ["created_at", "2018-04-03 23:39:24.596999"], ["updated_at", "2018-04-03 23:39:24.596999"]]
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 49], ["name", "Stanford Hills"], ["vin", "WD3HFVVW4N1FVPC5X"], ["created_at", "2018-04-03 23:39:24.605641"], ["updated_at", "2018-04-03 23:39:24.605641"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 50], ["name", "Maye Bauch"], ["vin", "1B6FU8M80MVDHHTMD"], ["created_at", "2018-04-03 23:39:24.615650"], ["updated_at", "2018-04-03 23:39:24.615650"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 51], ["name", "Lane Bogan I"], ["vin", "1F8C9NNV613L0RYSM"], ["created_at", "2018-04-03 23:39:24.622621"], ["updated_at", "2018-04-03 23:39:24.622621"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 52], ["name", "Favian Jaskolski"], ["vin", "TAMAMDNT2WGL7H8HW"], ["created_at", "2018-04-03 23:39:24.633584"], ["updated_at", "2018-04-03 23:39:24.633584"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 53], ["name", "Evie Wisoky"], ["vin", "1C9C39EC2XVXACA9T"], ["created_at", "2018-04-03 23:39:24.640291"], ["updated_at", "2018-04-03 23:39:24.640291"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 54], ["name", "Rogers Bartell IV"], ["vin", "1C9EVBRM0YBC564DZ"], ["created_at", "2018-04-03 23:39:24.645833"], ["updated_at", "2018-04-03 23:39:24.645833"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 55], ["name", "Kaitlin Veum"], ["vin", "SAR860AUXSBF8E4W9"], ["created_at", "2018-04-03 23:39:24.650540"], ["updated_at", "2018-04-03 23:39:24.650540"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 56], ["name", "Adriel Swift"], ["vin", "RF5D1APK7B8SDK1HR"], ["created_at", "2018-04-03 23:39:24.654843"], ["updated_at", "2018-04-03 23:39:24.654843"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 57], ["name", "Fermin Jakubowski"], ["vin", "1C9YKRAL923SACAZM"], ["created_at", "2018-04-03 23:39:24.660536"], ["updated_at", "2018-04-03 23:39:24.660536"]]
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 58], ["name", "Miss Arnulfo Heathcote"], ["vin", "3A9D1R1B4F5K068P9"], ["created_at", "2018-04-03 23:39:24.669877"], ["updated_at", "2018-04-03 23:39:24.669877"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 59], ["name", "Kole Stark"], ["vin", "DLAZG3L44NFXP9FN0"], ["created_at", "2018-04-03 23:39:24.674743"], ["updated_at", "2018-04-03 23:39:24.674743"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 60], ["name", "Oma Swift DDS"], ["vin", "TAMCBRPM7EN5GD88L"], ["created_at", "2018-04-03 23:39:24.680102"], ["updated_at", "2018-04-03 23:39:24.680102"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 61], ["name", "Mrs. Everardo Von"], ["vin", "WBTTYCCG00Y9K1VHZ"], ["created_at", "2018-04-03 23:39:24.684865"], ["updated_at", "2018-04-03 23:39:24.684865"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 62], ["name", "Jimmie Boehm"], ["vin", "WD251GUW8HGMJ0ZNZ"], ["created_at", "2018-04-03 23:39:24.689435"], ["updated_at", "2018-04-03 23:39:24.689435"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 63], ["name", "Zachariah Kertzmann"], ["vin", "1F9A1D0651D0041MZ"], ["created_at", "2018-04-03 23:39:24.697426"], ["updated_at", "2018-04-03 23:39:24.697426"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 64], ["name", "Salvador Sawayn"], ["vin", "SUA9K8KA35CZ8X2FT"], ["created_at", "2018-04-03 23:39:24.703585"], ["updated_at", "2018-04-03 23:39:24.703585"]]
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 65], ["name", "Adriana McKenzie"], ["vin", "1B6T67KY436CYBAXM"], ["created_at", "2018-04-03 23:39:24.712372"], ["updated_at", "2018-04-03 23:39:24.712372"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 66], ["name", "Carey Christiansen I"], ["vin", "WBTDYBGY2MKY5XRHV"], ["created_at", "2018-04-03 23:39:24.717146"], ["updated_at", "2018-04-03 23:39:24.717146"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 67], ["name", "Kelley Prosacco MD"], ["vin", "3R9Y9ZMH82KD097KU"], ["created_at", "2018-04-03 23:39:24.721573"], ["updated_at", "2018-04-03 23:39:24.721573"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 68], ["name", "Iliana Harris"], ["vin", "MB4Y2SKH7NX3MRF4W"], ["created_at", "2018-04-03 23:39:24.728619"], ["updated_at", "2018-04-03 23:39:24.728619"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 69], ["name", "Ernesto Torp"], ["vin", "RF4BPA803R4AACTR1"], ["created_at", "2018-04-03 23:39:24.735099"], ["updated_at", "2018-04-03 23:39:24.735099"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 70], ["name", "Meaghan Harvey"], ["vin", "4RA62BCGXGK0KW7GB"], ["created_at", "2018-04-03 23:39:24.739912"], ["updated_at", "2018-04-03 23:39:24.739912"]]
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 71], ["name", "Ms. Samantha Becker"], ["vin", "SXMYX1NY6A1MPG827"], ["created_at", "2018-04-03 23:39:24.747766"], ["updated_at", "2018-04-03 23:39:24.747766"]]
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 72], ["name", "Orlando Huel"], ["vin", "MB4Z24VD69SZ2UP0U"], ["created_at", "2018-04-03 23:39:24.757497"], ["updated_at", "2018-04-03 23:39:24.757497"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 73], ["name", "Augustus Nicolas"], ["vin", "SU9FXMPJ2A7KWL1PZ"], ["created_at", "2018-04-03 23:39:24.763474"], ["updated_at", "2018-04-03 23:39:24.763474"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 74], ["name", "Marley Satterfield IV"], ["vin", "DLADW1MKXLHMCDX3W"], ["created_at", "2018-04-03 23:39:24.768075"], ["updated_at", "2018-04-03 23:39:24.768075"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 75], ["name", "Mohammed Barrows"], ["vin", "4RACJHJL843CUJ46R"], ["created_at", "2018-04-03 23:39:24.772582"], ["updated_at", "2018-04-03 23:39:24.772582"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 76], ["name", "Jay Wintheiser"], ["vin", "RF457CL16G5L41HH5"], ["created_at", "2018-04-03 23:39:24.779807"], ["updated_at", "2018-04-03 23:39:24.779807"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 77], ["name", "Mr. Shanie Gusikowski"], ["vin", "XF9HHMKS402GD41NF"], ["created_at", "2018-04-03 23:39:24.787814"], ["updated_at", "2018-04-03 23:39:24.787814"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 78], ["name", "Casimir Vandervort"], ["vin", "SUA6WS160SW70DUP4"], ["created_at", "2018-04-03 23:39:24.792325"], ["updated_at", "2018-04-03 23:39:24.792325"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 79], ["name", "Vivian Fahey"], ["vin", "WD3Y8KHA4B7CC63K4"], ["created_at", "2018-04-03 23:39:24.797914"], ["updated_at", "2018-04-03 23:39:24.797914"]]
+  [1m[35m (4.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 80], ["name", "Victoria Windler"], ["vin", "1F9DRSRF78XH041L4"], ["created_at", "2018-04-03 23:39:24.807206"], ["updated_at", "2018-04-03 23:39:24.807206"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 81], ["name", "Amber Boyer"], ["vin", "1F9ZCCZ6XJAG041GX"], ["created_at", "2018-04-03 23:39:24.812309"], ["updated_at", "2018-04-03 23:39:24.812309"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 82], ["name", "Toney Shields MD"], ["vin", "WD3TVFYZ7MB5XVTM8"], ["created_at", "2018-04-03 23:39:24.817528"], ["updated_at", "2018-04-03 23:39:24.817528"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 83], ["name", "Charley Kiehn"], ["vin", "1B6BESZ55PXV3NB40"], ["created_at", "2018-04-03 23:39:24.820393"], ["updated_at", "2018-04-03 23:39:24.820393"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 84], ["name", "Marcellus Little"], ["vin", "SUAZR7LR7EL07VZ11"], ["created_at", "2018-04-03 23:39:24.826349"], ["updated_at", "2018-04-03 23:39:24.826349"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 85], ["name", "Dr. Lambert Kuhlman"], ["vin", "4RAYXBSK2HFSE1PKR"], ["created_at", "2018-04-03 23:39:24.834645"], ["updated_at", "2018-04-03 23:39:24.834645"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 86], ["name", "Garland Pouros"], ["vin", "MB4JNWLU9G5PV1KG4"], ["created_at", "2018-04-03 23:39:24.839766"], ["updated_at", "2018-04-03 23:39:24.839766"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 87], ["name", "Jannie Lubowitz"], ["vin", "SXM5DVE26JE83TSZV"], ["created_at", "2018-04-03 23:39:24.846156"], ["updated_at", "2018-04-03 23:39:24.846156"]]
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 88], ["name", "Anthony Sauer DVM"], ["vin", "1F9GFDFT6MVU04129"], ["created_at", "2018-04-03 23:39:24.851869"], ["updated_at", "2018-04-03 23:39:24.851869"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 89], ["name", "Tracy Huels"], ["vin", "GA1G04255VG79LGCD"], ["created_at", "2018-04-03 23:39:24.856156"], ["updated_at", "2018-04-03 23:39:24.856156"]]
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 90], ["name", "Kristy Cremin"], ["vin", "1F9FF7C27LJA041VR"], ["created_at", "2018-04-03 23:39:24.862639"], ["updated_at", "2018-04-03 23:39:24.862639"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 91], ["name", "Miss Colt Runolfsson"], ["vin", "1A9XL31P6FD5396CN"], ["created_at", "2018-04-03 23:39:24.869793"], ["updated_at", "2018-04-03 23:39:24.869793"]]
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 92], ["name", "Oceane O'Kon"], ["vin", "VF4CK0WS3JY0UVDGJ"], ["created_at", "2018-04-03 23:39:24.874599"], ["updated_at", "2018-04-03 23:39:24.874599"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 93], ["name", "Mrs. Rickey Dickens"], ["vin", "5FS0Y47Z59YGGSXS0"], ["created_at", "2018-04-03 23:39:24.882105"], ["updated_at", "2018-04-03 23:39:24.882105"]]
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 94], ["name", "Arlo Douglas"], ["vin", "SUA0RTWT48E144Z4U"], ["created_at", "2018-04-03 23:39:24.887546"], ["updated_at", "2018-04-03 23:39:24.887546"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 95], ["name", "Dalton Schiller"], ["vin", "8C946K4F3KWRME1PY"], ["created_at", "2018-04-03 23:39:24.901797"], ["updated_at", "2018-04-03 23:39:24.901797"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 96], ["name", "Miss Cali Huel"], ["vin", "TRCDP08V4X1XYADGK"], ["created_at", "2018-04-03 23:39:24.905892"], ["updated_at", "2018-04-03 23:39:24.905892"]]
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 97], ["name", "Haven O'Keefe"], ["vin", "LLD38LYB3ZEN45K2M"], ["created_at", "2018-04-03 23:39:24.911701"], ["updated_at", "2018-04-03 23:39:24.911701"]]
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 98], ["name", "Ms. Winston Emard"], ["vin", "1F9Z5CF13VV8041ND"], ["created_at", "2018-04-03 23:39:24.918096"], ["updated_at", "2018-04-03 23:39:24.918096"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 99], ["name", "Jayden Ledner"], ["vin", "RF4AT3WL6JJXPFUJL"], ["created_at", "2018-04-03 23:39:24.923134"], ["updated_at", "2018-04-03 23:39:24.923134"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "drivers" ("id", "name", "vin", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["id", 100], ["name", "Minnie Dach"], ["vin", "XF9Z0ST7X18WD41HT"], ["created_at", "2018-04-03 23:39:24.928223"], ["updated_at", "2018-04-03 23:39:24.928223"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "drivers"[0m
