@@ -1,0 +1,11 @@
+<h2>Details for <%= @passenger.name %></h2>
+
+<ul>
+  <%= @passenger.phone_num %>
+
+  <% @passenger.trips.each do |trip| %>
+    <li>
+    <%= link_to(trip.date, trip_path(trip)) %>
+  </li>
+  <% end %>
+</ul>

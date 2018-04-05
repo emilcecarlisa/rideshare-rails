@@ -1,11 +1,11 @@
 class PassengersController < ApplicationController
 
   def new
-    @book = Passenger.new
+    @passenger = Passenger.new
   end
 
   def index
-    @passengers = Passenger.all
+    @passenger = Passenger.all
   end
 
   def create
