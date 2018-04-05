@@ -12,7 +12,7 @@ class PassengersController < ApplicationController
     @passenger = Passenger.new(passenger_params)
 
     if @passenger.save
-      redirect_to '/passengers'
+      redirect_to passengers_path
     else
       render :new
     end
@@ -20,11 +20,11 @@ class PassengersController < ApplicationController
 
   def update
     updated_info = params[:passenger]
-    @passenger = Passenger.find(passenger_id)
+    @passenger = Passenger.find(params[:id])
     @passenger.assign_attributes(passenger_params)
 
     if @passenger.save
-      redirect_to passenger_path(passenger)
+      redirect_to passenger_path
     else
       render :edit
     end
