@@ -1,6 +1,9 @@
 <h2>Welcome to the best rideshare app ever - Riderly. We're revolutionizing the rideshare app industry!</h2>
 
-  <h3>Passengers</h3>
+<h3>Passengers</h3>
+
+<h4><%= link_to("Create a new passenger", new_passenger_path) %></h4>
+
   <ul>
     <% @passenger.each do |passenger| %>
     <li>
