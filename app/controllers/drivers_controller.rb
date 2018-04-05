@@ -21,6 +21,7 @@ class DriversController < ApplicationController
 
   def show
     @driver = Driver.find(params[:id])
+    @trips = @driver.trips
   end
 
   def edit
@@ -33,7 +34,7 @@ class DriversController < ApplicationController
     @driver.assign_attributes(driver_params)
 
     if @driver.save
-      redirect_to driver_path(driver)
+      redirect_to driver_path(@driver)
     else
       render :edit
     end
@@ -41,7 +42,8 @@ class DriversController < ApplicationController
 
   def destroy
      Driver.destroy(params[:id])
-      redirect_to driver_path
+
+     redirect_to drivers_path
   end
 
   private

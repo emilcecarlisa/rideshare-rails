@@ -1,6 +1,8 @@
 class Driver < ApplicationRecord
   has_many :trips
 
+  validates :vin, presence: true
+
   FEE = 1.65
   DRIVER_SHARE = 0.8
 

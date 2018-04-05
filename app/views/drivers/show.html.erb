@@ -1,7 +1,22 @@
 <h2>Details for this driver: <%= @driver.name %></h2>
 
+<body>
+<p> Vin: <%= @driver.vin %></p>
+
 <p> Total Revenue: $<%= @driver.total_revenue %> </p>
 
 <p> Average Rating: <%= @driver.average_rating %> </p>
 
-<%= link_to "Edit this driver", edit_driver_path(@driver) %>
+<%= link_to "Edit", edit_driver_path(@driver) %>
+<%= link_to "Delete", drivers_path(@driver) %>
+
+<ul>
+    <% @driver.trips.each do |trip| %>
+    <li>
+      <strong><%= link_to(trip.date, trip_path(trip.id)) %></strong>
+  </li>
+
+  <% end %>
+</ul>
+
+</body>
