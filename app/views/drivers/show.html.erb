@@ -1,5 +1,7 @@
 <h2>Details for this driver: <%= @driver.name %></h2>
 
-<p> Total Revenue: <%= @driver.total_revenue %> </p>
+<p> Total Revenue: $<%= @driver.total_revenue %> </p>
+
+<p> Average Rating: <%= @driver.average_rating %> </p>
 
 <%= link_to "Edit this driver", edit_driver_path(@driver) %>

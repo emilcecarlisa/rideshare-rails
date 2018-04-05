@@ -12,12 +12,23 @@ class Driver < ApplicationRecord
     end
 
     total = subtotal * DRIVER_SHARE
-    return total.to_f
+    return total.to_f.round(2)
   end
 
-  # def avg_revenue
-  #   avg_revenue = (total_revenue/drivers.length)
-  #   return avg_revenue_per_hr = (avg_revenue/60).round(2)
-  # end
+  def average_rating
+
+    total_ratings = 0
+    self.trips.each do |trip|
+      total_ratings += trip.rating
+    end
+
+    if trips.length == 0
+      average = 0
+    else
+      average = (total_ratings.to_f) / trips.length
+    end
+
+    return average.round
+  end
 
 end
