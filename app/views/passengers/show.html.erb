@@ -1,0 +1,23 @@
+<h2>Details for <%= @passenger.name %></h2>
+
+<ul>
+  <li>
+    Total Spent on Trips:
+     <%= @passenger.total_cost %>
+  </li>
+
+  <% @passenger.trips.each do |trip| %>
+    <li>
+    <%= link_to(trip.date, trip_path(trip)) %>
+  </li>
+  <% end %>
+  <li>
+    <%= link_to("Edit #{@passenger.name}", edit_passenger_path) %>
+  </li>
+  <li>
+    <%= link_to("Delete #{@passenger.name}", passenger_path, method: :delete, data: { confirm: "Are you sure you want to delete #{@passenger.name}?"}) %>
+  </li>
+  <li>
+    <%= link_to("Start a new trip!", new_passenger_trip_path(@passenger)) %>
+  </li>
+</ul>

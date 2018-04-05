@@ -1,18 +1,18 @@
 class PassengersController < ApplicationController
 
   def new
-    @book = Passenger.new
+    @passenger = Passenger.new
   end
 
   def index
-    @passengers = Passenger.all
+    @passenger = Passenger.all
   end
 
   def create
     @passenger = Passenger.new(passenger_params)
 
     if @passenger.save
-      redirect_to '/passengers'
+      redirect_to passengers_path
     else
       render :new
     end
@@ -20,11 +20,11 @@ class PassengersController < ApplicationController
 
   def update
     updated_info = params[:passenger]
-    @passenger = Passenger.find(passenger_id)
+    @passenger = Passenger.find(params[:id])
     @passenger.assign_attributes(passenger_params)
 
     if @passenger.save
-      redirect_to passenger_path(passenger)
+      redirect_to passenger_path
     else
       render :edit
     end
@@ -40,7 +40,7 @@ class PassengersController < ApplicationController
 
   def destroy
     Passenger.destroy(params[:id])
-    redirect_to passenger_path
+    redirect_to passengers_path
   end
 
   private
