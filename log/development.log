@@ -1,0 +1,137 @@
+Started GET "/drivers/4" for 127.0.0.1 at 2018-04-04 23:12:49 -0700
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DriversController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDriver Load (0.5ms)[0m  [1m[34mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering drivers/show.html.erb within layouts/application
+  Rendered drivers/show.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 5.7ms)
+
+
+
+NoMethodError - undefined method `total_revenue' for #<Driver:0x00007f8f770c8ec0>:
+  app/views/drivers/show.html.erb:3:in `_app_views_drivers_show_html_erb__3365493702610590477_70127099005160'
+
+Started POST "/__better_errors/5930856dcdca4c49/variables" for 127.0.0.1 at 2018-04-04 23:12:50 -0700
+Started GET "/drivers/4" for 127.0.0.1 at 2018-04-04 23:18:39 -0700
+Processing by DriversController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDriver Load (0.3ms)[0m  [1m[34mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering drivers/show.html.erb within layouts/application
+  Rendered drivers/show.html.erb within layouts/application (17.2ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 3.7ms)
+
+
+
+NameError - undefined local variable or method `completed_trips' for #<Driver:0x00007f8f79aeae60>:
+  app/models/driver.rb:13:in `total_revenue'
+  app/views/drivers/show.html.erb:3:in `_app_views_drivers_show_html_erb__3365493702610590477_70127099266820'
+
+Started POST "/__better_errors/0677843287ddba75/variables" for 127.0.0.1 at 2018-04-04 23:18:40 -0700
+Started GET "/drivers/4" for 127.0.0.1 at 2018-04-04 23:51:56 -0700
+Processing by DriversController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDriver Load (0.4ms)[0m  [1m[34mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering drivers/show.html.erb within layouts/application
+  Rendered drivers/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 5.1ms)
+
+
+
+NameError - uninitialized constant Driver::Trips:
+  app/models/driver.rb:10:in `total_revenue'
+  app/views/drivers/show.html.erb:3:in `_app_views_drivers_show_html_erb__3365493702610590477_70127099140960'
+
+Started POST "/__better_errors/15267d8573a8981b/variables" for 127.0.0.1 at 2018-04-04 23:51:56 -0700
+Started GET "/drivers/4" for 127.0.0.1 at 2018-04-04 23:52:11 -0700
+Processing by DriversController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDriver Load (0.3ms)[0m  [1m[34mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering drivers/show.html.erb within layouts/application
+  [1m[36mTrip Load (25.3ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."driver_id" = $1[0m  [["driver_id", 4]]
+  Rendered drivers/show.html.erb within layouts/application (87.8ms)
+Completed 200 OK in 393ms (Views: 344.7ms | ActiveRecord: 34.3ms)
+
+
+Started GET "/drivers/4/edit" for 127.0.0.1 at 2018-04-04 23:52:18 -0700
+Processing by DriversController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDriver Load (0.6ms)[0m  [1m[34mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering drivers/edit.html.erb within layouts/application
+  Rendered drivers/_form.html.erb (1.1ms)
+  Rendered drivers/edit.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.6ms)
+
+
+
+SyntaxError - syntax error, unexpected ')', expecting '('
+...ly Drivers are here for YOU". );@output_buffer.safe_append='
+...                              ^
+/Users/Emilce/Documents/Ada/week9/rideshare-rails/app/views/drivers/_form.html.erb:18: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^:
+  app/views/drivers/_form.html.erb:2:in `'
+  app/views/drivers/edit.html.erb:1:in `_app_views_drivers_edit_html_erb___3368971931268778381_70127086661900'
+
+Started POST "/__better_errors/49a4c07262f42c17/variables" for 127.0.0.1 at 2018-04-04 23:52:18 -0700
+Started GET "/drivers/4/edit" for 127.0.0.1 at 2018-04-04 23:53:47 -0700
+Processing by DriversController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering drivers/edit.html.erb within layouts/application
+  Rendered drivers/_form.html.erb (1.3ms)
+  Rendered drivers/edit.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+
+SyntaxError - syntax error, unexpected end-of-input, expecting keyword_end
+          end
+             ^:
+  app/views/drivers/_form.html.erb:18:in `'
+  app/views/drivers/edit.html.erb:1:in `_app_views_drivers_edit_html_erb___3368971931268778381_70127077009560'
+
+Started POST "/__better_errors/f7bb7f4557f91439/variables" for 127.0.0.1 at 2018-04-04 23:53:47 -0700
+Started GET "/drivers/4/edit" for 127.0.0.1 at 2018-04-04 23:54:15 -0700
+Processing by DriversController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDriver Load (0.2ms)[0m  [1m[34mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering drivers/edit.html.erb within layouts/application
+  Rendered drivers/_form.html.erb (31.0ms)
+  Rendered drivers/edit.html.erb within layouts/application (33.4ms)
+Completed 200 OK in 55ms (Views: 50.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/drivers/4" for 127.0.0.1 at 2018-04-04 23:54:24 -0700
+Processing by DriversController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mDriver Load (0.6ms)[0m  [1m[34mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering drivers/show.html.erb within layouts/application
+  [1m[36mTrip Load (0.9ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."driver_id" = $1[0m  [["driver_id", 4]]
+  Rendered drivers/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 46ms (Views: 35.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/drivers/16" for 127.0.0.1 at 2018-04-04 23:54:31 -0700
+Processing by DriversController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mDriver Load (0.3ms)[0m  [1m[34mSELECT  "drivers".* FROM "drivers" WHERE "drivers"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering drivers/show.html.erb within layouts/application
+  [1m[36mTrip Load (0.4ms)[0m  [1m[34mSELECT "trips".* FROM "trips" WHERE "trips"."driver_id" = $1[0m  [["driver_id", 16]]
+  Rendered drivers/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 19.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/drivers" for 127.0.0.1 at 2018-04-04 23:55:50 -0700
+Processing by DriversController#index as HTML
+  Rendering drivers/index.html.erb within layouts/application
+  [1m[36mDriver Load (0.4ms)[0m  [1m[34mSELECT "drivers".* FROM "drivers"[0m
+  Rendered drivers/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.4ms)
+
+
+
+ActionController::UrlGenerationError - No route matches {:action=>"edit", :controller=>"drivers", :id=>nil}, missing required keys: [:id]:
+  app/views/drivers/index.html.erb:10:in `_app_views_drivers_index_html_erb___4035747202118345495_70127087588240'
+
+Started POST "/__better_errors/816cd386a0c5fab8/variables" for 127.0.0.1 at 2018-04-04 23:55:50 -0700

@@ -1,0 +1,14 @@
+<h2>
+  <%= "Riderly Drivers are here for YOU." %>
+</h2>
+
+<%= form_for @driver do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+
+<body>
+
+  <%= yield %>
+
+</body>
+<% end %>
