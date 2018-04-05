@@ -11,7 +11,7 @@
 <%= link_to "Delete", drivers_path(@driver) %>
 
 <ul>
-    <% @driver.trips.each do |trip| %>
+    <% @trips.each do |trip| %>
     <li>
       <strong><%= link_to(trip.date, trip_path(trip.id)) %></strong>
   </li>

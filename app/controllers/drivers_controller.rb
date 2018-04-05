@@ -22,6 +22,7 @@ class DriversController < ApplicationController
   def show
     @driver = Driver.find(params[:id])
     @trips = @driver.trips
+    # could also do a nested route
   end
 
   def edit
