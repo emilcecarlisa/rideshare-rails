@@ -2,10 +2,14 @@ class Passenger < ApplicationRecord
 
   has_many :trips
 
-  def self.total_cost
+  validates :name, presence: true
+
+  validates :phone_num, presence: true
+
+  def total_cost
     total = 0
 
-    Passenger.trips.each do |trip|
+    trips.each do |trip|
       total += trip.cost
     end
     return total

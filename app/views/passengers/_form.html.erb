@@ -1,5 +1,7 @@
 <h3><%= page_title %></h3>
 
+<%= render partial: "error_messages", locals: {model: @passenger} %>
+
 <%= form_for @passenger do |p| %>
   <%= p.label :name %>
   <%= p.text_field :name %>
@@ -8,4 +10,4 @@
   <%= p.text_field :phone_num %>
 
   <%= p.submit %>
-<% end %>  
+<% end %>
