@@ -1,4 +1,4 @@
-class PassengerController < ApplicationController
+class PassengersController < ApplicationController
 
   def new
     @book = Passenger.new
@@ -15,6 +15,7 @@ class PassengerController < ApplicationController
       redirect_to '/passengers'
     else
       render :new
+    end
   end
 
   def update
