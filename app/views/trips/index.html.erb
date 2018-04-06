@@ -1,0 +1,13 @@
+<h2>Riderly Trips - the most disruptive in the industry. Because they're so freaking expensive.</h2>
+
+<h3>Trips</h3>
+
+<h4><%= link_to("Create a new trip", new_trip_path) %></h4>
+
+  <ul>
+    <% @trips.each do |trip| %>
+    <li>
+      <strong><%= link_to(trip.id, trip_path(trip)) %></strong>
+    </li>
+    <% end %>
+  </ul>
