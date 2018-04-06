@@ -1,0 +1,22 @@
+<h3><%= page_title %></h3>
+
+<%= render partial: "error_messages", locals: {model: @trip} %>
+
+<%= form_for @trip do |p| %>
+  <%= p.label :date %>
+  <%= p.date_field :date %>
+
+  <%= p.label :rating %>
+  <%= p.text_field :rating %>
+
+  <%= p.label :cost %>
+  <%= p.text_field :cost %>
+
+  <% p.label :driver %>
+  <% p.hidden_field :driver %>
+
+  <% p.label :passenger %>
+  <% p.hidden_field :passenger %>
+
+  <%= p.submit %>
+<% end %>
