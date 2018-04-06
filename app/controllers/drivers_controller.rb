@@ -49,7 +49,7 @@ class DriversController < ApplicationController
 
   private
   def driver_params
-    return params.require(:driver).permit(:name, :driver_id, :vin)
+    return params.require(:driver).permit(:name, :driver_id, :vin, :status)
   end
 
 end

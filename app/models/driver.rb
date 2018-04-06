@@ -37,7 +37,7 @@ class Driver < ApplicationRecord
   def self.get_available_driver
     driver_list = Driver.all
     driver_list.each do |driver|
-      if driver.status == "available"
+      if driver.status == "AVAILABLE"
         return driver.id
       end
     end

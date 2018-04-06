@@ -10,7 +10,9 @@ class Passenger < ApplicationRecord
     total = 0
 
     trips.each do |trip|
-      total += trip.cost
+      if trip.cost
+        total += trip.cost
+      end
     end
     return total
   end

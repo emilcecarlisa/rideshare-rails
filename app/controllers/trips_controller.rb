@@ -17,7 +17,7 @@ class TripsController < ApplicationController
 
     @trip = Trip.create(new_trip_info)
 
-    redirect_to passenger_path
+    redirect_to passenger_path(params[:passenger_id])
   end
 
   def show

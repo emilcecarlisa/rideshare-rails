@@ -31,6 +31,9 @@
 <%= f.label :vin %>
 <%= f.text_field :vin %>
 
+<%= f.label :status %>
+<%= f.select :status, ['AVAILABLE' ,'UNAVAILABLE'] %>
+
 <%= f.submit %>
 
 <% end %>
