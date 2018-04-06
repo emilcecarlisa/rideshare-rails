@@ -9,13 +9,15 @@ class TripsController < ApplicationController
   end
 
   def create
-    @trip = Trip.new(trip_params)
+    new_trip_info = {
+      passenger_id: params[:passenger_id],
+      driver_id: Driver.get_available_driver,
+      date: Date.new
+    }
 
-    if @trip.save
-      redirect_to trips_path
-    else
-      render :new
-    end
+    @trip = Trip.create(new_trip_info)
+
+    redirect_to passenger_path
   end
 
   def show
@@ -45,7 +47,8 @@ class TripsController < ApplicationController
 
   private
   def trip_params
-    return params.require(:trip).permit(:date, :rating, :cost)
+    return params.require(:trip).permit(:date, :rating, :cost, :passenger_id, :driver_id)
   end
+
 
 end

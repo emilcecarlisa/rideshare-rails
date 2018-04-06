@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   resources :drivers
 
   resources :passengers do
-    resources :trips, only: [:new]
+    resources :trips, only: [:create]
   end
-  
+
   resources :trips
 
 end

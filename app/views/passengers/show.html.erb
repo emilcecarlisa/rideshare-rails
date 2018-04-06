@@ -18,6 +18,6 @@
     <%= link_to("Delete #{@passenger.name}", passenger_path, method: :delete, data: { confirm: "Are you sure you want to delete #{@passenger.name}?"}) %>
   </li>
   <li>
-    <%= link_to("Start a new trip!", new_passenger_trip_path(@passenger)) %>
+    <%= link_to("Start a new trip!", passenger_trips_path(@passenger), method: :create) %>
   </li>
 </ul>

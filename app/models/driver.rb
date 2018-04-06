@@ -34,4 +34,13 @@ class Driver < ApplicationRecord
     return average.round
   end
 
+  def self.get_available_driver
+    driver_list = Driver.all
+    driver_list.each do |driver|
+      if driver.status == "available"
+        return driver.id
+      end
+    end
+  end
+
 end
