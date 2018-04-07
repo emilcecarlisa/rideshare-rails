@@ -12,7 +12,7 @@ class TripsController < ApplicationController
     new_trip_info = {
       passenger_id: params[:passenger_id],
       driver_id: Driver.get_available_driver,
-      date: Date.new
+      date: Time.now.strftime("%Y-%m-%d")
     }
 
     @trip = Trip.create(new_trip_info)
@@ -34,15 +34,16 @@ class TripsController < ApplicationController
     @trip.assign_attributes(trip_params)
 
     if @trip.save
-      redirect_to trip_path(trip)
+      redirect_to trip_path(@trip)
     else
       render :edit
     end
   end
 
   def destroy
-     Trip.destroy(params[:id])
-     redirect_to trip_path
+    trip = Trip.find(params[:id])
+    trip.destroy
+    redirect_to passenger_path(trip.passenger)
   end
 
   private
